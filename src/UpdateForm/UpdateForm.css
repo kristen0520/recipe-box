@@ -10,16 +10,12 @@
 
 
 #form {
-  background-color:#9068be;
-  width:50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;;
-  padding: 40px;
-  border: solid 2px #595959;
-  border-radius: 10px;
-  color: #e1e8f0;
   z-index: 900;
+  padding: 40px;
+  margin: 0 auto;
+  margin-top: 15%;
+  width: 100%;
+  color: white !important;
 }
 
 .isvisible{

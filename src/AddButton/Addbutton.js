@@ -3,12 +3,13 @@ import './AddButton.css'
 
 const AddButton = (props) => {
   return(
-  <div id="addbutton" className="col-12">
+  <div id="addContainer">
 
   <button
-  className={["row", "btn-primary"].join(" ")}
-  onClick={props.click}>
-  Add Recipe</button>
+    className={["btn-primary"].join(" ")}
+    onClick={props.click}>
+    Add Recipe
+  </button>
 
   </div>
 
