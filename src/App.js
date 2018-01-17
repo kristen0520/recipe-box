@@ -11,8 +11,9 @@ class App extends Component {
 
   state = {
     "recipes": {
-      "sandwich": ["bread", "tomato", "mayo"],
-      "smore": ["cracker", "marshmallow", "chocolate bar"]
+      "Summer Pasta with Tomatoes and Peas": ["pasta", "peas", "cherry tomatoes","olive oil", "salt","pepper"],
+      "Pan-Seared Soy Sauce and Black Pepper Tofu": ["firm tofu", "soy sauce", "ground black pepper", "olive oil", "sesame seeds", "green onions"],
+      "Potato Soup":["green onions", "vegetable broth", "cubed potato", "Cajun seasoning", "shredded sharp cheddar"]
     },
     "newInputName": "",
     "newInputIngredients": "",
