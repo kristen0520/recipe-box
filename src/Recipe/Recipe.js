@@ -27,7 +27,7 @@ const recipeVals = recipeKeys.map((recipeKeys, index) =>
     {r[recipeKeys].map((ingr) =>
         <li>{ingr}</li>
       )}
-    <button className="btn-primary" id={recipeKeys} onClick={props.updateClick}>Edit</button>
+    <button className="btn-warning" id={recipeKeys} onClick={props.updateClick}>Edit</button>
 
     <button className="btn-danger" id={recipeKeys} onClick={props.deleteClick}>Delete</button>
     </div>

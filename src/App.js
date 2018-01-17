@@ -5,6 +5,7 @@ import Recipe from './Recipe/Recipe';
 import AddButton from './AddButton/Addbutton';
 import UpdateForm from './UpdateForm/UpdateForm';
 import Form from './Form/Form';
+import Header from './Header'
 
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
     "recipes": {
       "Summer Pasta with Tomatoes and Peas": ["pasta", "peas", "cherry tomatoes","olive oil", "salt","pepper"],
       "Pan-Seared Soy Sauce and Black Pepper Tofu": ["firm tofu", "soy sauce", "ground black pepper", "olive oil", "sesame seeds", "green onions"],
-      "Potato Soup":["green onions", "vegetable broth", "cubed potato", "Cajun seasoning", "shredded sharp cheddar"]
+      "5-Ingredient Potato Soup":["green onions", "vegetable broth", "cubed potato", "Cajun seasoning", "shredded sharp cheddar"]
     },
     "newInputName": "",
     "newInputIngredients": "",
@@ -81,6 +82,7 @@ handleDeleteClick = (event) => {
 }
 
 handleAddClick = (event) => {
+  console.log(this.state.newInputIngredients)
   this.setState({"addFormVis": "isvisible"})
 }
 
@@ -111,6 +113,8 @@ handleOutsideClick = (event) => {
 
     return (
       <div className="App">
+        <Header />
+
         <Recipe
         recipes={this.state.recipes}
         handleNameClick={this.handleNameClick}
